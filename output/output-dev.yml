@@ -1,3 +1,6 @@
 p:
   a: a
   b: b
+u:
+  name: output
+  age: 100
