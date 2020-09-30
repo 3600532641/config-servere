@@ -9,3 +9,7 @@ spring:
           uri: lb://invoice-core
           predicates:
             - Path=/invoice/**
+        - id: invoice-output-route
+            uri: lb://invoice-output
+            predicates:
+              - Path=/output/**
