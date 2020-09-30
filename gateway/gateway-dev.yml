@@ -1,0 +1,11 @@
+#id 我们自定义的路由 ID，保持唯一
+#uri 目标服务地址 自定义的lb:类型，表示从微服务注册中心（如Eureka）订阅服务
+#predicates 路由条件，Predicate 接受一个输入参数，返回一个布尔值结果
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: invoice-core-route
+          uri: lb://invoice-core
+          predicates:
+            - Path=/api/**
