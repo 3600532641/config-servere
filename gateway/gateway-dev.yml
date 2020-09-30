@@ -8,4 +8,4 @@ spring:
         - id: invoice-core-route
           uri: lb://invoice-core
           predicates:
-            - Path=/api/**
+            - Path=/invoice/**
