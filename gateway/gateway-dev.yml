@@ -10,6 +10,6 @@ spring:
           predicates:
             - Path=/invoice/**
         - id: invoice-output-route
-            uri: lb://invoice-output
-            predicates:
-              - Path=/output/**
+          uri: lb://invoice-output
+          predicates:
+            - Path=/output/**
