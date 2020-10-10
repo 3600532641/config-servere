@@ -1,3 +1,14 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: zyzxbwxxfp
+    username: zyzxbwxxfp
+    url: jdbc:mysql://mysql.test.baiwang-inner.com:3306/zyzxbwxxfp?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&autoReconnect=true&&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMulQueries=true&&nullCatalogMeansCurrent=true
+
+logging:
+  level:
+    org.invoice.cloud.dao: debug
+
 u:
   name: user
   age: 18
